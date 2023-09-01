@@ -19,11 +19,11 @@
 }
 
 .dark{
-    --cor-0: #350058;
-    --cor-1: #3d1579;
-    --cor-2: #4E00C6;
-    --cor-3: #6400FA;
-    --cor-4: #914BFB;
+    --cor-0: #005849;
+    --cor-1: #157942;
+    --cor-2: #00c631;
+    --cor-3: #00fa21;
+    --cor-4: #51fb4b;
 }
 
 /* ------------------------------------------- */
@@ -43,7 +43,7 @@
 /* ------------------------------------------- */
 
 body{
-    background:linear-gradient(to right, #12001f, #44007c);
+    background:linear-gradient(to right, var(--cor-0), var(--cor-1));
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -83,6 +83,33 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* ------------------------------------------- */
+
+.tema{
+    margin: 10px;
+}
+.tema .bi{
+    color: var(--cor-4);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.bi-moon{
+    display: none;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+
+input[type="checkbox"]{
+    display: none;
 }
 
 /* ------------------------------------------- */
