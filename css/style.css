@@ -133,7 +133,7 @@ span{
 
 .link-list ul i{
     display: flex;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .link-list ul span{
@@ -145,6 +145,12 @@ span{
     display: flex;
     font-size: 1em;
     position: relative;
+}
+
+.invisible{
+    /* content: ''; */
+    background: 0;
+    padding: 14px;
 }
 
 /* ------------------------------------------- */
