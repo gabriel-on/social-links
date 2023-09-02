@@ -11,20 +11,22 @@
 }
 
 :root{
-    --cor-0: #350058;
-    --cor-1: #3d1579;
-    --cor-2: #4E00C6;
-    --cor-3: #6400FA;
-    --cor-4: #914BFB;
+    --cor-0: #1d1829;
+    --cor-1: #1b0b3a;
+    --cor-2: #3a018f;
+    --cor-3: #4e00c4;
+    --cor-4: #8144db;
 }
 
-.dark{
+.light{
     --cor-0: #005849;
     --cor-1: #157942;
     --cor-2: #00c631;
     --cor-3: #00fa21;
     --cor-4: #51fb4b;
 }
+
+
 
 /* ------------------------------------------- */
 
@@ -43,7 +45,7 @@
 /* ------------------------------------------- */
 
 body{
-    background:linear-gradient(to right, var(--cor-0), var(--cor-1));
+    background:linear-gradient(to top, var(--cor-0), var(--cor-1));
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -98,15 +100,15 @@ span{
     cursor: pointer;
 }
 
-.bi-moon{
+.bi-sun{
     display: none;
 }
 
-.dark .bi-sun{
+.light .bi-moon{
     display: none;
 }
 
-.dark .bi-moon{
+.light .bi-sun{
     display: block;
 }
 
@@ -228,13 +230,13 @@ input[type="checkbox"]{
     color: #ffffff;
     /* background: var(--cor-2); */
     /* backdrop-filter: blur(100px); */
-    -webkit-backdrop-filter: blur(100px);
+    /* -webkit-backdrop-filter: blur(100px); */
 }
 
 /* ------------------------------------------- */
 
 footer{
-    color: #e7e7e7;
+    color: var(--cor-4);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

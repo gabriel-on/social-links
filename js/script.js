@@ -1,27 +1,27 @@
 // DARK/LIGHT MODE --------------------- //
 
-const changeThemeBtn = document.querySelector("change-theme")
+const changeThemeBtn = document.querySelector("#change-theme")
 
-function toggleMode(){
-    document.body.classList.toggle("dark")
+function toggleMode() {
+    document.body.classList.toggle("light")
 }
 
 function loadTheme(){
-    const darkMode = localStorage.getItem("dark")
+    const lightMode = localStorage.getItem("light")
 
-    if (darkMode){
+    if (lightMode){
         toggleMode()
     }
 }
 
 loadTheme()
 
-changeThemeBtn;addEventListener("change", function() {
+changeThemeBtn.addEventListener("change", function () {
     toggleMode()
 
-    localStorage.removeItem("dark")
+    localStorage.removeItem("light")
 
-    if (this.document.body.classList.contains("dark")) {
-        localStorage.setItem("dark", 1)
+    if (document.body.classList.contains("light")) {
+        localStorage.setItem("light", 1)
     }
 })
