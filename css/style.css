@@ -49,6 +49,12 @@ body{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 420px) {
+    body{
+        background: var(--cor-1);
+    }
+}
+
 section{
     max-width: 100%;
     padding: 0px 24px;
